@@ -9,6 +9,11 @@
       <button data-test="decrement" @click="decrement">
         Decrement
       </button>
+
+      <p v-if="count >= 5" data-test="limit">
+        Limit reached
+    </p>
+
     </div>
   </template>
   
