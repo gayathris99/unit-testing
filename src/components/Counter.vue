@@ -1,7 +1,14 @@
 <template>
     <div>
       <p data-test="count">{{ count }}</p>
-      <button @click="increment">Increment</button>
+  
+      <button data-test="increment" @click="increment">
+        Increment
+      </button>
+  
+      <button data-test="decrement" @click="decrement">
+        Decrement
+      </button>
     </div>
   </template>
   
@@ -12,6 +19,10 @@
   
   function increment() {
     count.value++
+  }
+  
+  function decrement() {
+    count.value--
   }
   </script>
   
