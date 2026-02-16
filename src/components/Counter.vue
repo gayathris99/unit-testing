@@ -2,9 +2,14 @@
     <div>
       <p data-test="count">{{ count }}</p>
   
-      <button data-test="increment" @click="increment">
+      <button
+        data-test="increment"
+        @click="increment"
+        :disabled="count >= 5"
+        >
         Increment
-      </button>
+        </button>
+
   
       <button data-test="decrement" @click="decrement">
         Decrement
@@ -13,6 +18,10 @@
       <p v-if="count >= 5" data-test="limit">
         Limit reached
     </p>
+
+    <button data-test="reset" @click="count = 0">
+        Reset
+    </button>
 
     </div>
   </template>
