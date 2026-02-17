@@ -1,6 +1,5 @@
 <template>
-  <Counter/>
-  <MessageCard title="Hello"/>
+  <router-view/>
 </template>
 
 <script setup>
